@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<!--
+Created using JS Bin
+http://jsbin.com
+
+Copyright (c) 2018 by veni75 (http://jsbin.com/kebadol/17/edit)
+
+Released under the MIT license: http://jsbin.mit-license.org
+-->
+<meta name="robots" content="noindex">
+<html>
+  <head>
+    <meta name="description" content="esküvői-sajat">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width initial-scale=1">
+    <title>Zoe & Alex</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Great+Vibes%7CLibre+Baskerville%7CMuli" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-favicon.png">
+  <style id="jsbin-css">
+* {
+    box-sizing: border-box;
+}
+
+article {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png') no-repeat center;
+   background-size: cover;
+  }
+
+/* ==== HEADER STYLES ==== */
+
+.cover {
+  background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat 70% center/cover;
+  height: 100vh;
+  width: 100vw;
+  color: white;
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+    }
+
+.wrapper {
+  width: 100vw;
+  background-color: hsla(100,0%,0%,.6);
+  padding-top: 2rem;
+}
+
+
+.main {
+  width: 35%;
+}
+
+.short {
+  width: 4%;
+  display: inline-block;
+  vertical-align: middle;
+   }
+
+
+.wrapper h2 {
+  font-size: 1.5rem;
+  line-height: 2rem;
+  letter-spacing: .1rem;
+   }
+
+.wrapper h3 {
+  font-size: 1.15rem;
+  line-height: 2rem;
+   letter-spacing: .15rem;
+}
+
+.headline1 {
+  font-size: 4rem;
+  margin: 2rem 0;
+  color: #d2ba87;
+  font-family: 'Great Vibes', cursive;
+}
+
+@media screen and (min-width: 768px) {
+
+  .wrapper h2 {
+    text-transform: uppercase;
+      }
+  
+  .wrapper {
+    width: 50%;
+    text-align: center;
+    }
+
+}
+
+
+
+/* ==== SECTION FIRST STYLES ==== */
+
+.first {
+  color: #444349;
+  text-align: center;
+  padding: 1.5rem;
+   }
+
+h1 {font-size: 2.5rem;
+padding-top: 2rem;
+  padding-bottom: 2rem;
+font-family: 'Great Vibes', cursive;
+  text-align: center;
+  }
+
+.headline3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+  }
+
+img {
+  width: 10vw;
+  height: auto;
+  margin: 2rem;
+}
+
+.tagline1 {
+  margin: 0 auto;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  }
+
+.boxes hr {width: 15%;
+  margin: 1.2rem auto;
+  color:black;
+}
+
+.tagline4 {
+  font-size: 1.2rem;
+  font-family: 'Libre Baskerville', serif;
+  line-height: 2.5em;
+}
+
+a {
+  text-decoration: none;
+  color: #bd806e;
+}
+
+a:hover {
+  color: #eda087;
+  transition: color .15s ease-in-out;
+}
+
+.box {
+  display: block;
+}
+
+.locations {width: 15%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: black;}
+
+@media  (min-width: 768px) {
+  
+  .box {
+    display: inline-block;
+    vertical-align: top;
+    width: 30vw;
+    padding: 2rem;
+  }
+  
+  .locations, .questions {display:none;}
+  
+  }
+
+
+
+/* ==== SECTION SECOND STYLES ==== */
+
+.second {
+  background-color: hsla(100,0%,0%,.6); 
+  width: 100vw;
+  color: #d2ba87;
+  padding: 1.5rem;
+          }
+
+.tagline2 {
+  text-align: left;
+  padding-left: 10%;
+  font-family: 'Libre Baskerville', serif;
+  font-size: 1rem;
+  line-height: 1.5rem;
+      }
+
+.tagline3 {
+  text-align: center;
+  font-style: oblique;
+  padding-bottom: 2rem;
+}
+
+.tagline5 {
+  font-family: 'Libre Baskerville', serif;
+  text-align: center;
+  font-size: 1.4rem;
+  padding-bottom: 1rem;
+  }
+
+.tagline6 {
+  font-family: 'Muli', sans-serif;
+  line-height: 1.7rem;
+  font-weight: bold;
+  padding-top: 1.3rem;
+}
+
+.tagline7 {
+  font-family: 'Muli', sans-serif;
+  line-height: 1.5rem;
+  }
+
+.questions {width: 35%;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  background-color: #d2ba87;
+  height: .3rem;}
+
+@media  (min-width: 768px) {
+
+  .tagline5 {
+    text-align: left;
+  }
+  
+  .tagline2 {
+    padding-left: 30%;
+  }
+  }
+
+
+
+/* ==== FOOTER STYLES ==== */
+
+footer {
+  display: table;
+  width: 100vw;
+  height: 6rem;
+  text-align: center;
+  font-family: 'Muli', sans-serif;
+  font-size: .8rem;
+  font-weight: bold;
+}
+
+.wrapper {
+  display: table-cell;
+  vertical-align: middle;
+  padding-bottom: 2rem;
+}
+
+footer small {
+  color: white;
+  letter-spacing: .025rem;
+  }
+
+
+
+</style>
+</head>
+  <body>
+    <header class="cover">
+      <div class="wrapper">
+        <h2>We're getting married!</h2>
+        <hr class="main">
+        <h1 class="headline1">Zoe & Alex</h1>
+        <h3><hr class="short">August 1, 2018<hr class="short"></h3>
+      </div>
+    </header>
+    <article>
+      <section class="first">
+        <h1>Locations</h1>
+        <div class="box">
+          <h2 class="headline3">Ceremony</h2>
+          <img src="https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-ceremony.png" alt="ceremony location gyűrűk">
+          <p class="tagline1">St. Nicholas Church</p>
+          <p class="tagline1">2 Trinity Square, Budapest</p>
+        </div>
+        <hr noshade class="locations">
+        <div class="box">
+          <h2 class="headline3">Photos</h2>
+          <img src="https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-photoshoot.png" alt="photoshoot location fényképezőgép">
+          <p class="tagline1">Liberty Bastion</p>
+          <p class="tagline1">23 Wisdom Road, Budapest</p>
+        </div>
+        <hr noshade class="locations">
+        <div class="box">
+          <h2 class="headline3">Party</h2>
+          <img src="https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-party.png" alt="party location torta">
+          <p class="tagline1">Heaven Lounge</p>
+          <p class="tagline1">14 Fairy Street, Budapest</p>
+        </div>
+        <hr noshade class="locations">
+      </section>
+      <section class="second">
+        <h1>Program</h1>
+        <p class="tagline3">"It's going to be somehow, that's for sure."</p>
+        <p class="tagline2"> 13:45 – Wedding ceremony</p>
+        <p class="tagline2">14:30 – Photos</p>
+        <p class="tagline2">16:00 – Cocktails</p>
+        <p class="tagline2">18:00 – Dinner</p>
+        <p class="tagline2">22:00 – Cake</p>
+        <p class="tagline2">... - 4:00 – Dance until dawn</p>
+      </section>
+      <section class="first">
+        <h1>Gifts</h1>
+        <p class="tagline4">The greatest gift for us is to have you there.</p>
+        <img src="https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-gifts.png" alt="gifts">
+        <p class="tagline4">Please, just bring yourself and have fun with us.</p>
+      </section>
+      <section class="second">
+        <h1>Questions and Answers</h1>
+        <div class="box">
+          <h4 class="tagline5">Travel and accomodations:</h4>
+          <h5 class="tagline6">Will there be some kind of organized transfer?</h5>
+          <p class="tagline7">No, we'll just meet at the church at 13:15.</p>
+          <h5 class="tagline6"> Where can I park?</h5>
+          <p class="tagline7"> Parking is free on the weekends in the 1st district. The locations are close to each other so you won't need your car.</p>
+          <h5 class="tagline6">How can I get home at night?</h5>
+          <p class="tagline7">The 916 bus is in service all night at the castle and it hits every major traffic hub in the city.</p>
+        </div>
+        <hr noshade class="questions">
+        <div class="box">
+          <h4 class="tagline5">Food and festivities:</h4>
+          <h5 class="tagline6">I'd like to do some kind of surprise for you guys at the party. To whom should I talk about this?</h5>
+          <p class="tagline7">Discuss it with Abigail Smith. Just drop her an email at <a href="#">abigail@awesomemail.com</a>.</p>
+          <h5 class="tagline6">What should I wear? Do you have a dress code?</h5>
+          <p class="tagline7">Wear what's comfortable to you. If it helps <a href="#">smart casual</a> / <a href="#">business casual</a> for the ladies and <a href="#">smart casual</a> / <a href="#">informal</a> for the gentlemen are perfect options.</p>
+          <h5 class="tagline6"> I would like some kind of special food (gluten-free, lactose-free, vegan etc.)</h5>
+          <p class="tagline7">Drop us a line <a href="#">here</a> and we'll find a way.</p>
+       </div>
+       <hr noshade class="questions">
+       <div class="box">
+         <h4 class="tagline5">Other small stuff:</h4>
+         <h5 class="tagline6">I have a problem / question on the wedding day. With whom can I speak?</h5>
+         <p class="tagline7">Jared Wright on this number: <a href="#">+36 30 000 0000</a>.</p>
+         <h5 class="tagline6"> Can we bring kids?</h5>
+         <p class="tagline7"> Sure! We planned a whole toy / sweets corner for them.</p>
+         <h5 class="tagline6"> How do you feel about dogs? Can I bring mine?</h5>
+         <p class="tagline7"> We love dogs and you can absolutely bring yours. The Heaven Lounge is a dog-friendly place.</p>
+      </div>
+      <hr noshade class="questions">
+    </section>
+      <section class="first">
+        <h1>Contact</h1>
+        <p class="tagline4">If you have any questions feel free to call / write us.</p>
+        <p class="tagline4">Phone: <a href="tel:+36300000000">+36 30 000 0000</a> (Zoe) / <a href="tel:+36300000000">+36 30 000 0000</a> (Alex)</p>
+        <p class="tagline4">Email: <a href="mailto:zoeandalex@awesomemail.com">zoeandalex@awesomemail.com</a></p>
+      </section>
+    </article>
+    <footer>
+      <div class="wrapper">
+        <small>Made with ♥ in Budapest ©2018 | Icons by <a href="http://www.flaticon.com/authors/becris" class="footer-nav">Becris</a>(<a href="https://creativecommons.org/licenses/by/3.0/" class="footer-nav">CC 3.0 BY</a>)</small>
+      </div>
+    </footer>
+  </body>
+</html>
+
